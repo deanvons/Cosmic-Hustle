@@ -54,7 +54,6 @@ namespace Cosmic_Hustle_Test_Harness
 
         }
 
-
         [Fact]
         public void Ship_Should_Have_ProvidedAndDefaultValues_When_Created()
         {
@@ -82,7 +81,6 @@ namespace Cosmic_Hustle_Test_Harness
             Assert.NotNull(ship.CargoBay);
 
         }
-
 
         [Fact]
         public void Planet_Should_Have_ProvidedAndDefaultValues_When_Created()
@@ -158,8 +156,6 @@ namespace Cosmic_Hustle_Test_Harness
 
         }
 
-
-
         [Fact]
         public void WareItemCache_Should_Have_ProvidedAndDefaultValues_When_Created()
         {
@@ -169,7 +165,6 @@ namespace Cosmic_Hustle_Test_Harness
             var expectedWareItem = new WareItem(1,"","","",1);
             var expectedQuantity = 1;
          
-
             // Act
             var wareItemCache = new WareItemCache(expectedId, expectedWareItem,expectedQuantity);
 
@@ -177,7 +172,11 @@ namespace Cosmic_Hustle_Test_Harness
             Assert.Equal(expectedId, wareItemCache.Id);
             Assert.Equal(expectedWareItem, wareItemCache.CacheItem);
             Assert.Equal(expectedQuantity, wareItemCache.Quantity);
- 
+
          }
+    
+    
+    
+    
     }
 }
