@@ -8,6 +8,10 @@ namespace Cosmic_Hustle_Core.Models
 {
     public class Merchant
     {
+        public Merchant()
+        {
+
+        }
         public Merchant(int id, string name)
         {
             Id = id;

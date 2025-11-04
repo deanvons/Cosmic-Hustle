@@ -8,10 +8,19 @@ namespace Cosmic_Hustle_Core.Models
 {
     public class TradeStation
     {
-        public int Id { get; set; }
+        public TradeStation(int id)
+        {
+            Id = id;
+            WareHouseStock = new List<WareItemCache>(); // always non-null, starts empty
+            MarketListings = new List<MarketListing>();
+        }
 
-        public MarketListing MarketListing { get; set; }
+        public int Id { get; }
 
-        public List<WareItem> WareHouseStock { get; set; }
+        
+
+        public List<MarketListing> MarketListings { get; }
+
+        public List<WareItemCache> WareHouseStock { get; } 
     }
 }

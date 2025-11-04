@@ -13,11 +13,12 @@ namespace Cosmic_Hustle_Core.Models
         {
             Id = id;
             Name = name;
+            TradeStation = new TradeStation(id);
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public TradeStation? TradeStation { get; set; }
+        public TradeStation TradeStation { get; set; }
     }
 }
