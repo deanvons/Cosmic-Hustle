@@ -96,23 +96,11 @@ namespace Cosmic_Hustle_Test_Harness
             // Assert
             Assert.Equal(expectedId, planet.Id);
             Assert.Equal(expectedName, planet.Name);
+            Assert.NotNull(planet.TradeStation);
 
         }
 
-        [Fact]
-        public void MarketSheet_Should_Have_ProvidedAndDefaultValues_When_Created()
-        {
-
-            // Arrange
-            var expectedId = 1;
-
-            // Act
-            var marketSheet = new MarketSheet(expectedId);
-
-            // Assert
-            Assert.Equal(expectedId, marketSheet.Id);
-
-        }
+       
 
         [Fact]
         public void MarketListing_Should_Have_ProvidedAndDefaultValues_When_Created()
@@ -174,9 +162,28 @@ namespace Cosmic_Hustle_Test_Harness
             Assert.Equal(expectedQuantity, wareItemCache.Quantity);
 
          }
-    
-    
-    
-    
+
+        [Fact]
+        public void TradeStation_Should_Have_ProvidedAndDefaultValues_When_Created()
+        {
+
+            // Arrange
+           var expectedId = 1;
+           
+           
+
+            // Act
+           var tradeStation = new TradeStation(expectedId);
+
+            // Assert
+            Assert.Equal(expectedId, tradeStation.Id);
+            Assert.NotNull(tradeStation.WareHouseStock);
+            Assert.NotNull(tradeStation.MarketListings);
+
+        }
+
+
+
+
     }
 }

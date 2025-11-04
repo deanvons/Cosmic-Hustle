@@ -8,6 +8,10 @@ namespace Cosmic_Hustle_Core.Models
 {
     public class WareItem
     {
+        public WareItem()
+        {
+
+        }
         public WareItem(int id, string name, string description, string type, double weight)
         {
             Id = id;

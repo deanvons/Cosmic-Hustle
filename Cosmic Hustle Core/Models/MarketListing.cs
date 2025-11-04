@@ -17,9 +17,9 @@ namespace Cosmic_Hustle_Core.Models
 
         public int Id { get; set; }
 
-        public WareItemCache WareItemCache { get; set; }
-
         public double Price { get; set; }
+
+        public WareItemCache WareItemCache { get; set; }
 
     }
 }

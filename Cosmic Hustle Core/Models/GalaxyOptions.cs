@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Cosmic_Hustle_Core.Models
 {
-    internal class GalaxyOptions
+    public record GalaxyOptions
     {
+        public GalaxyOptions(int numberOfPlanets, int numberOfSolarSystems = 1)
+        {
+            NumberOfPlanets = numberOfPlanets;
+            NumberOfSolarSystems = numberOfSolarSystems;
+        }
+
+        public int NumberOfPlanets { get; }
+
+        public int NumberOfSolarSystems { get;  }
     }
 }

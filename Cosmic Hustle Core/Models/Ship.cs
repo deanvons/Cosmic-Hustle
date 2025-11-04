@@ -8,6 +8,9 @@ namespace Cosmic_Hustle_Core.Models
 {
     public class Ship
     {
+        public Ship() { }
+
+
         public Ship(int id, string name, double cargoCapacity, double fuelCapacity, double cargoLoad, double fuelLevel, int solarSystemTravelRange)
         {
             Id = id;
