@@ -22,8 +22,6 @@ namespace Cosmic_Hustle_Core.State
             Player = newPlayer;
             Galaxy = galaxyService.GenerateGalaxy(options);
 
-
-
         }
 
         public String ShowInitialState()
@@ -38,5 +36,7 @@ namespace Cosmic_Hustle_Core.State
 
 
         }
+
+
     }
 }

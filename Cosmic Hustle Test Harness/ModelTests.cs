@@ -127,9 +127,9 @@ namespace Cosmic_Hustle_Test_Harness
 
             // Arrange
             int expectedId = 1;
-            string expectedName = "name";
+            WareItemName expectedName = WareItemName.AlienArtifacts;
             string expectedDescription = "description";
-            string expectedType = "type";
+            WareItemType expectedType = WareItemType.Luxuries;
             double expectedWeight = 1;
 
             // Act
@@ -150,7 +150,7 @@ namespace Cosmic_Hustle_Test_Harness
 
             // Arrange
             var expectedId = 1;
-            var expectedWareItem = new WareItem(1,"","","",1);
+            var expectedWareItem = new WareItem(1,WareItemName.AlienArtifacts,"",WareItemType.Luxuries,1);
             var expectedQuantity = 1;
          
             // Act

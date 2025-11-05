@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Cosmic_Hustle_Core.Models
 {
-    public class WareItem
+    public class WareItem : IComparable<WareItem>
     {
         public WareItem()
         {
 
         }
-        public WareItem(int id, string name, string description, string type, double weight)
+        public WareItem(int id, WareItemName name, string description, WareItemType type, double weight)
         {
             Id = id;
             Name = name;
@@ -23,15 +23,17 @@ namespace Cosmic_Hustle_Core.Models
 
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        public WareItemName Name { get; set; }
 
         public string Description { get; set; }
 
-        public string Type { get; set; }
+        public WareItemType Type { get; set; }
 
         public double Weight { get; set; }
 
-
-
+        public int CompareTo(WareItem? other)
+        {
+            return Id.CompareTo(other.Id);
+        }
     }
 }
